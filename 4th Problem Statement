@@ -1,0 +1,41 @@
+//Write a program to take two numbers and print their sum, difference, product, and quotient
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void Numbers(){
+
+            int s,d,t;
+
+            cout << "Number of Test Cases: "<< endl;
+
+            cin>>t;
+            
+            while (t--)
+            {
+                cout << "Enter your First Number: " << endl;
+                
+                cin >> s;
+
+                cout << "Enter your Second Number: " << endl;
+
+                cin >> d;
+
+                cout << "The Sum of the two numbers is: " << s + d << endl;
+
+                cout << "The Difference of the two numbers is: " << s - d << endl;
+
+                cout << "The Product of the two numbers is: " << s * d << endl;
+
+                cout << "The Quotient of the two numbers is: " << s / d << endl;
+            }
+            
+        }
+};
+
+int main(){
+    Dewesh obj;
+    obj.Numbers();
+    return 0;
+}
