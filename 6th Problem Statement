@@ -1,0 +1,34 @@
+//Write a program to calculate the area of a circle, given its radius.
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void circle(){
+            int t;
+
+            cout << "Enter the Number of Test Cases: "<< endl;
+
+            cin >> t;
+
+            while (t--)
+            {
+                int s,d;
+                
+                cout << "Enter the radius of the circle: " << endl;
+
+                cin >> s;
+
+                d = 3.14 * s * s;
+
+                cout << "The Area of the circle with radius " << s << " is: " << d << endl;
+            }
+            
+        }
+};
+
+int main(){
+    Dewesh obj;
+    obj.circle();
+    return 0;
+}
