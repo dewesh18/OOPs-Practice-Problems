@@ -1,0 +1,43 @@
+//Write a program to check whether a number is positive or negative.
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void check(){
+
+            int t;
+
+            cout << "Enter the Number of Test Cases: " << endl;
+
+            cin >> t;
+
+            while (t--)
+            {
+                int s,d;
+
+                cout << "Enter Your Number: " << endl;
+
+                cin >> s;
+
+                if (s > 0)
+                {
+                    cout << "The Number is Positive." << endl;
+                }
+                else if (s == 0)
+                {
+                    cout << "The Number is Zero." << endl;
+                }
+                else
+                {
+                    cout << "The Number is Negative." << endl;
+                }
+            }
+        }
+};
+
+int main(){
+    Dewesh obj;
+    obj.check();
+    return 0;
+}
