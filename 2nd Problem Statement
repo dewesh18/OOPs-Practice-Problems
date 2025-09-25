@@ -1,0 +1,42 @@
+//Write a program to find the largest of two numbers.
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void largest(){
+        
+            int s,d,t;
+
+            cout << "Number of Test Cases: "<< endl;
+            cin >> t;
+
+            while (t--)
+            {
+                
+                cout << "First Number is: " << endl;
+                cin >> s;
+                cout << "Second Number is: " << endl;
+                cin >> d;
+                if (s > d)
+                {
+                    cout << "Number " << s << " is greater than " << d << endl;
+                }
+                else if (d > s)
+                {
+                    cout << "Number " << d << " is greater than " << s << endl;
+                }
+                
+                else
+                {
+                    cout << "Both Numbers are equal" << endl;
+                }   
+            }
+        }
+};
+
+int main(){
+    Dewesh obj;
+    obj.largest();
+    return 0;
+}
