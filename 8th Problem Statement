@@ -1,0 +1,46 @@
+//Write a program to find the smallest of three numbers
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void three(){
+            
+            int t;
+
+            cout << "Enter the Number of Test Cases: " << endl;
+
+            cin >> t;
+
+            while (t--)
+            {
+                int s, d, n;
+
+                cout << "Enter three numbers: " << endl;
+
+                cin >> s >> d >> n;
+
+                if (s > d && n)
+                {
+                    cout << "The number " << s << " is greater than " << d << " and " << n << endl; 
+                }
+                else if (d > s && n)
+                {
+                    cout << "The number " << d << " is greater than " << s << " and " << n << endl;
+                }
+                else
+                {
+                    cout << "The number " << n << " is greater than " << s << " and " << d << endl;
+                }
+                
+                
+                
+            }
+            
+        }
+};
+int main(){
+    Dewesh obj;
+    obj.three();
+    return 0;
+}
