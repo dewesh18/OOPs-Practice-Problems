@@ -1,0 +1,33 @@
+//Write a program to take temperature in Celsius and convert it to Fahrenheit.
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void Temp(){
+            int t;
+
+            cout << "Number of Test Cases: " << endl;
+
+            cin >> t;
+
+            while(t--){
+
+                int s, d;
+
+                cout << "Enter the Temperature in Celsius: " << endl;
+
+                cin >> s;
+
+                d = (s * (9/5)) + 32;
+
+                cout << "The conversion of Temperature " << s << " Degree Celsius in Fahrenheit is: "<< d << endl;
+            }
+        }
+};
+
+int main(){
+    Dewesh obj;
+    obj.Temp();
+    return 0;
+}
