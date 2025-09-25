@@ -1,0 +1,56 @@
+//Write a program to check whether a number is even or odd.
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void check(){
+            int d,s,n;
+            cout << "The number is:";
+            cin >> d;
+
+            cout << "Do you confirm your number is: " << d << ".\n"<< endl;
+
+            cout << "(Press 1 for YES and 2 for NO)\n" << endl;
+
+            cin >> n;
+
+            if (n == 1)
+            {
+                s = d % 2;
+                if (s == 0)
+                {
+                    cout << "The Number is Even.\n" << endl;
+                }
+                else
+                {
+                    cout << "The Number is Oddd.\n" << endl;
+                }
+                
+            }
+            else
+            {
+                cout << "TRY AGAIN LATER!" << endl;
+            }
+            
+        }
+
+};
+
+int main(){
+    Dewesh obj;
+    obj.check();
+    return 0; 
+}
+
+/*
+            s = d % 2;
+            if (s == 0)
+            {
+                cout << "The number is Even.\n" << endl;
+            }
+            else
+            {
+                cout << "The number is Odd.\n" << endl;
+            }
+*/
