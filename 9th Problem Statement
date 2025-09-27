@@ -1,0 +1,32 @@
+//Write a program to print the multiplication table of a given number.
+#include<iostream>
+using namespace std;
+
+class Dewesh{
+    public:
+        void table(){
+            int t;
+            cout << "Enter the Number of Test Cases: " << endl;
+            cin >> t;
+            while (t--)
+            {
+                int s,d,i;
+
+                cout << "Enter the Number: " << endl;
+
+                cin >> s;
+
+                for (int i = 1; i < 11; i++)
+                {
+                    cout << s << " x " << i << " = " << s * i << endl;
+                }
+            }
+            
+        }
+};
+
+int main(){
+    Dewesh obj;
+    obj.table();
+    return 0;
+}
